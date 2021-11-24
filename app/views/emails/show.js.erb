@@ -1,4 +1,2 @@
-<%# console.log('test show js'); %>
-
-document.getElementById("selected_email").after("<%= j render 'selected', email: @email %>")
+document.getElementById("selected_content").innerHTML = "<%= j render 'selected', email: @email %>"
 
