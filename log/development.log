@@ -240,3 +240,310 @@ Processing by EmailsController#index as HTML
 Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2021-11-24 14:53:54 +0100
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.4ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:11
+  Rendered emails/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-24 14:54:57 +0100
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.4ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:11
+  Rendered emails/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/emails/2" for 127.0.0.1 at 2021-11-24 14:54:59 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"2"}
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (1.3ms)
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-24 14:55:15 +0100
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:11
+  Rendered emails/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/emails/4" for 127.0.0.1 at 2021-11-24 14:55:16 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"4"}
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (1.4ms)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/emails/2" for 127.0.0.1 at 2021-11-24 14:55:17 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"2"}
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (1.9ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/emails/2" for 127.0.0.1 at 2021-11-24 14:55:18 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"2"}
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (2.0ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/emails/1" for 127.0.0.1 at 2021-11-24 14:55:18 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.2ms)
+  Rendered emails/show.js.erb (1.3ms)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/emails/5" for 127.0.0.1 at 2021-11-24 14:55:19 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"5"}
+  [1m[36mEmail Load (0.4ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (2.0ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/emails/3" for 127.0.0.1 at 2021-11-24 14:55:20 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"3"}
+  [1m[36mEmail Load (2.0ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (1.6ms)
+Completed 200 OK in 9ms (Views: 3.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/emails/1" for 127.0.0.1 at 2021-11-24 14:55:20 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.2ms)
+  Rendered emails/show.js.erb (1.3ms)
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/emails/3" for 127.0.0.1 at 2021-11-24 14:55:21 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"3"}
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.2ms)
+  Rendered emails/show.js.erb (1.6ms)
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/emails/4" for 127.0.0.1 at 2021-11-24 14:55:22 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"4"}
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (1.6ms)
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/emails/5" for 127.0.0.1 at 2021-11-24 14:55:22 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"5"}
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.4ms)
+  Rendered emails/show.js.erb (4.9ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/emails/3" for 127.0.0.1 at 2021-11-24 14:55:23 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"3"}
+  [1m[36mEmail Load (0.5ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (1.7ms)
+Completed 200 OK in 9ms (Views: 5.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-11-24 14:55:24 +0100
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.4ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:11
+  Rendered emails/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/emails/2" for ::1 at 2021-11-24 14:55:27 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"2"}
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (1.8ms)
+Completed 200 OK in 9ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/emails/3" for ::1 at 2021-11-24 14:55:28 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"3"}
+  [1m[36mEmail Load (0.4ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.4ms)
+  Rendered emails/show.js.erb (2.0ms)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/emails/5" for ::1 at 2021-11-24 14:55:29 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"5"}
+  [1m[36mEmail Load (0.4ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (1.5ms)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/emails/1" for ::1 at 2021-11-24 14:55:30 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (1.6ms)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/emails/4" for 127.0.0.1 at 2021-11-24 14:55:32 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"4"}
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (2.2ms)
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/emails/3" for 127.0.0.1 at 2021-11-24 14:55:33 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"3"}
+  [1m[36mEmail Load (0.8ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.2ms)
+  Rendered emails/show.js.erb (1.2ms)
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/emails/2" for 127.0.0.1 at 2021-11-24 14:55:34 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"2"}
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (1.7ms)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/emails/1" for 127.0.0.1 at 2021-11-24 14:55:35 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mEmail Load (0.7ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (2.0ms)
+Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/emails/4" for 127.0.0.1 at 2021-11-24 14:55:36 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"4"}
+  [1m[36mEmail Load (0.4ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (1.5ms)
+Completed 200 OK in 9ms (Views: 3.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/emails/5" for 127.0.0.1 at 2021-11-24 14:55:37 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"5"}
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (1.5ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2021-11-24 14:56:06 +0100
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:11
+  Rendered emails/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-24 14:56:07 +0100
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:11
+  Rendered emails/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/emails/4" for ::1 at 2021-11-24 14:56:07 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"4"}
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (1.8ms)
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
