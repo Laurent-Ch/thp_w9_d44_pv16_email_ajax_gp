@@ -8,9 +8,13 @@
   <div class="list_email">
     <h1>Liste des emails</h1>
       <ul id="email-list">
-        <% @emails.each do |email| %>
-          <li><%= link_to email.object, email_path(email), remote: 'true' %></b></li>
-        <% end %>
+<% @emails.each do |email| %>
+  <% if email.read %>
+    <li><%= link_to email.object, email_path(email), remote: 'true', class: 'read_email' %></b></li>
+  <% else %>
+    <li><%= link_to email.object, email_path(email), remote: 'true' %></b></li>
+  <% end %>
+<% end %>
       </ul>
   </div>
   <div class="select_email">

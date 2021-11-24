@@ -25,4 +25,9 @@
 
 li {
   list-style-type: none; 
+  font-weight: bold;
+}
+
+.read_email {
+  font-weight: normal;
 }

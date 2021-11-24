@@ -1,2 +1,7 @@
-document.getElementById("selected_content").innerHTML = "<%= j render 'selected', email: @email %>"
 
+document.getElementById("selected_content").innerHTML = "<%= j render 'selected', email: @email %>";
+
+<!-- Front side -->
+document.querySelector("a[href='/emails/<%= params[:id]%>']").setAttribute("class", "read_email");
+
+<% @email.update(read: true) %>

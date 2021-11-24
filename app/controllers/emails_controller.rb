@@ -13,12 +13,18 @@ class EmailsController < ApplicationController
   end
 
   def create
-    @email = Email.create(object: Faker::Name.unique.name, body: Faker::ChuckNorris.fact)
+    @email = Email.create(object: Faker::Name.unique.name, body: Faker::ChuckNorris.fact, read: false)
     respond_to do |format|
       format.html { redirect_to root }
       format.js { }
     end
   end
+
+  # Might be useful for 2.6 part 2
+  # def update
+  #   @email = Email.find(params[:id])
+  #   @email.update(read: false)
+  # end
 
   def destroy
     @email = Email.find(params[:id])
