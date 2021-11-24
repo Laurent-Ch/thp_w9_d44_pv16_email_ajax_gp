@@ -4,12 +4,17 @@
   <% end %>
 </div>
 
-<h1>Liste des emails</h1>
-<ul id="email-list">
-  <% @emails.each do |email| %>
-    <li><%= link_to email.object, email_path(email), remote: 'true' %></b></li>
-  <% end %>
-</ul>
-
-<h1 id="selected_email">Email sélectionné</h1>
-<div id="selected_content"></div>
+<div class="boxes">
+  <div class="list_email">
+    <h1>Liste des emails</h1>
+      <ul id="email-list">
+        <% @emails.each do |email| %>
+          <li><%= link_to email.object, email_path(email), remote: 'true' %></b></li>
+        <% end %>
+      </ul>
+  </div>
+  <div class="select_email">
+    <h1 id="selected_email">Email sélectionné</h1>
+    <div id="selected_content"></div>
+  </div>
+</div>

@@ -1,0 +1,242 @@
+  [1m[35m (109.0ms)[0m  [1m[35mCREATE DATABASE "ajax_mails_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:4
+  [1m[35m (34.2ms)[0m  [1m[35mCREATE DATABASE "ajax_mails_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:4
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4410330141764055705)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateEmails (20211124095401)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "emails" ("id" bigserial primary key, "object" character varying, "body" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20211124095401_create_emails.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211124095401"]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-11-24 13:41:07.375136"], ["updated_at", "2021-11-24 13:41:07.375136"]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(4410330141764055705)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEmail Create (0.5ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Ms. Olene Feil"], ["body", "Chuck Norris can instantiate an abstract class."], ["created_at", "2021-11-24 13:41:08.030852"], ["updated_at", "2021-11-24 13:41:08.030852"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Natisha Stanton"], ["body", "Chuck Norris does not use revision control software. None of his code has ever needed revision."], ["created_at", "2021-11-24 13:41:08.032173"], ["updated_at", "2021-11-24 13:41:08.032173"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Mabel Rau"], ["body", "Chuck Norris doesn't pair program."], ["created_at", "2021-11-24 13:41:08.033361"], ["updated_at", "2021-11-24 13:41:08.033361"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Doug Bergnaum"], ["body", "Chuck Norris programs do not accept input."], ["created_at", "2021-11-24 13:41:08.034198"], ["updated_at", "2021-11-24 13:41:08.034198"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mEmail Create (0.2ms)[0m  [1m[32mINSERT INTO "emails" ("object", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["object", "Dr. Trinidad Kertzmann"], ["body", "\"It works on my machine\" always holds true for Chuck Norris."], ["created_at", "2021-11-24 13:41:08.035022"], ["updated_at", "2021-11-24 13:41:08.035022"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+Started GET "/" for ::1 at 2021-11-24 14:41:20 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/violettemarquis/.rvm/gems/ruby-2.7.4/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.8ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:9
+  Rendered emails/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 146ms (Views: 136.4ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/emails/1" for ::1 at 2021-11-24 14:41:23 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mEmail Load (0.4ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (2.3ms)
+Completed 200 OK in 13ms (Views: 5.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-24 14:45:13 +0100
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:9
+  Rendered emails/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/emails/2" for 127.0.0.1 at 2021-11-24 14:46:33 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"2"}
+  [1m[36mEmail Load (0.8ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.5ms)
+  Rendered emails/show.js.erb (2.8ms)
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/emails/4" for 127.0.0.1 at 2021-11-24 14:46:34 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"4"}
+  [1m[36mEmail Load (0.4ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.4ms)
+  Rendered emails/show.js.erb (2.1ms)
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/emails/4" for 127.0.0.1 at 2021-11-24 14:46:34 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"4"}
+  [1m[36mEmail Load (0.4ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (1.6ms)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/emails/5" for 127.0.0.1 at 2021-11-24 14:46:35 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"5"}
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.5ms)
+  Rendered emails/show.js.erb (2.6ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/emails/3" for 127.0.0.1 at 2021-11-24 14:46:35 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"3"}
+  [1m[36mEmail Load (0.5ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (2.0ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/emails/2" for 127.0.0.1 at 2021-11-24 14:46:36 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"2"}
+  [1m[36mEmail Load (0.2ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.4ms)
+  Rendered emails/show.js.erb (1.7ms)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/emails/1" for 127.0.0.1 at 2021-11-24 14:46:37 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.4ms)
+  Rendered emails/show.js.erb (2.8ms)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/emails/3" for 127.0.0.1 at 2021-11-24 14:46:38 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"3"}
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.4ms)
+  Rendered emails/show.js.erb (2.4ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/emails/4" for 127.0.0.1 at 2021-11-24 14:46:39 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"4"}
+  [1m[36mEmail Load (0.9ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.4ms)
+  Rendered emails/show.js.erb (2.3ms)
+Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/emails/5" for 127.0.0.1 at 2021-11-24 14:46:40 +0100
+Processing by EmailsController#show as JS
+  Parameters: {"id"=>"5"}
+  [1m[36mEmail Load (1.0ms)[0m  [1m[34mSELECT  "emails".* FROM "emails" WHERE "emails"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/emails_controller.rb:8
+  Rendering emails/show.js.erb
+  Rendered emails/_selected.html.erb (0.3ms)
+  Rendered emails/show.js.erb (1.5ms)
+Completed 200 OK in 8ms (Views: 3.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-24 14:49:33 +0100
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:9
+  Rendered emails/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-24 14:50:03 +0100
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.6ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:9
+  Rendered emails/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-24 14:53:16 +0100
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.5ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:11
+  Rendered emails/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-24 14:53:18 +0100
+Processing by EmailsController#index as HTML
+  Rendering emails/index.html.erb within layouts/application
+  [1m[36mEmail Load (0.3ms)[0m  [1m[34mSELECT "emails".* FROM "emails"[0m
+  ↳ app/views/emails/index.html.erb:11
+  Rendered emails/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.3ms)
+
+
