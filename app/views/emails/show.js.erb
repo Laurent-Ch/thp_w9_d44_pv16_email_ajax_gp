@@ -7,7 +7,7 @@ urlElement.setAttribute("class", "read_email");
 
 <% @email.update(read: true) %>
 
-function showUrl () {
+function showUrl() {
   const Http = new XMLHttpRequest();
   const url = "/emails/<%= params[:id]%>";
 
@@ -15,11 +15,5 @@ function showUrl () {
   Http.send();
 }
 
-function dummyLog {
-  console.log("connexion OK");
-}
-
-urlElement.parentNode.parentNode.addEventListener('onclick', dummyLog);
-
-
+divSelect.addEventListener('click', console.log("connexion OK"));
 

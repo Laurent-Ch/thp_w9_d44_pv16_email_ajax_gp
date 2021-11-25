@@ -14,3 +14,6 @@
 //= require activestorage
 //= require_tree .
 
+var allDivs = document.getElementsByClassName("email-elt");
+allDivs.addEventListener('click', console.log("connexion OK"));
+allDivs.indexOf(searchElement, fromIndex)
