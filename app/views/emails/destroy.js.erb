@@ -1,2 +1,1 @@
-document.querySelector("a[href='/emails/<%= params[:id]%>']").remove();
-document.getElementById("selected_content").innerHTML = " ";
+document.querySelector("a[href='/emails/<%= params[:id]%>']").parentNode.parentNode.remove();

@@ -1,5 +1,7 @@
+<div class="selected-email">
 <h4><%= email.object%></h4>
 <p><%= email.body%>
 <br><br>
-<button> <%= link_to "Supprimer", email_path, :method => :delete, remote: 'true' %></button>
-<button> <%= link_to "Marquer comme non-lu", email_path, :method => :patch, remote: 'true' %></button>
+<button class="btn"> <%= link_to "Supprimer", email_path, :method => :delete, remote: 'true' %></button>
+<button class="btn"> <%= link_to "Marquer comme non-lu", email_path, :method => :patch, remote: 'true' %></button>
+</div>

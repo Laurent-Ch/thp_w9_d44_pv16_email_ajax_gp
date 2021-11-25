@@ -1,7 +1,7 @@
 class EmailsController < ApplicationController
 
   def index
-    @emails = Email.all
+    @emails = Email.all.sort_by(&:id)
   end
 
   def show
