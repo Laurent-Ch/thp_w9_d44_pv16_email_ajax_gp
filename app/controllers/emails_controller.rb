@@ -20,11 +20,14 @@ class EmailsController < ApplicationController
     end
   end
 
-  # Might be useful for 2.6 part 2
-  # def update
-  #   @email = Email.find(params[:id])
-  #   @email.update(read: false)
-  # end
+  def edit
+    @email = Email.find(params[:id])
+  end
+
+  def update
+    @email = Email.find(params[:id])
+    @email.update(read: false)
+  end
 
   def destroy
     @email = Email.find(params[:id])

@@ -1,9 +1,1 @@
-# <% if false %>
-
-# <% if email.read %>
-# <li><%=link_to email.object, email_path(email), remote: true,  class: read_email %></li>
-# <% else %>
-# <li><%=link_to email.object, email_path(email), remote: true %></li>
-# <%end%>
-
-# <% end %>
+<li><%= link_to email.object, email_path(email), remote: 'true' %></b></li>
