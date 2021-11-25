@@ -1,14 +1,16 @@
 # README
 
 #### Team Work
-Mathias P.
+Mathias P. && Laurent C. && Violette M.
 
-Laurent C.
+**introducing Gmail V-666**
 
-Violette M.
+#### What is done
 
-introducing Gmail V-666
+2.1 to 2.6 working just fine
 
-#### Available on Heroku
+Bonus question 2.7 under...question
+
+#### Project is available on Heroku
 https://gmail666like.herokuapp.com/
 

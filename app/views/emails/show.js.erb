@@ -2,6 +2,24 @@
 document.getElementById("selected_content").innerHTML = "<%= j render 'selected', email: @email %>";
 
 <!-- Front side -->
-document.querySelector("a[href='/emails/<%= params[:id]%>']").setAttribute("class", "read_email");
+var urlElement = document.querySelector("a[href='/emails/<%= params[:id]%>']")
+urlElement.setAttribute("class", "read_email");
 
 <% @email.update(read: true) %>
+
+function showUrl () {
+  const Http = new XMLHttpRequest();
+  const url = "/emails/<%= params[:id]%>";
+
+  Http.open("GET", url);
+  Http.send();
+}
+
+function dummyLog {
+  console.log("connexion OK");
+}
+
+urlElement.parentNode.parentNode.addEventListener('onclick', dummyLog);
+
+
+
