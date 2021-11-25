@@ -2,10 +2,6 @@ class EmailsController < ApplicationController
 
   def index
     @emails = Email.all.sort_by(&:id)
-    respond_to do |format|
-      format.html { }
-      format.js { }
-    end
   end
 
   def show
@@ -38,10 +34,9 @@ class EmailsController < ApplicationController
     @email.destroy
 
     respond_to do |format|
-      format.html { redirect_to root }
+      format.html {  }
       format.js  { }
     end
   end
-
 
 end

@@ -7,13 +7,6 @@ urlElement.setAttribute("class", "read_email");
 
 <% @email.update(read: true) %>
 
-function showUrl() {
-  const Http = new XMLHttpRequest();
-  const url = "/emails/<%= params[:id]%>";
 
-  Http.open("GET", url);
-  Http.send();
-}
 
-divSelect.addEventListener('click', console.log("connexion OK"));
 

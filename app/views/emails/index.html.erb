@@ -1,28 +1,28 @@
-<div class="centered-elt">
 <%= link_to "Recevoir un email", emails_path, :method => :post, remote: 'true', class: "btn" %>
 
 <div class="boxes">
+
   <div class="list_email">
-    <h1>Liste des emails</h1>
+    <h1>Boîte mails</h1>
       <ol id="email-list">
-<% @emails.each do |email| %>
-  <% if email.read %>
-  <div class="email-elt" >
-    <li><%= link_to email.object, email_path(email), remote: 'true' %></li>
-  </div>
-  <% else %>
-  <div class="email-elt">
-    <li><%= link_to email.object, email_path(email), remote: 'true' %></li>
-  </div>
-  <% end %>
-<% end %>
+        <% @emails.each do |email| %>
+          <% if email.read %>
+            <div class="email-elt" >
+              <li><%= link_to email.object, email_path(email), remote: 'true' %></li>
+            </div>
+          <% else %>
+            <div class="email-elt">
+              <li><%= link_to email.object, email_path(email), remote: 'true' %></li>
+            </div>
+          <% end %>
+        <% end %>
       </ol>
   </div>
-  <div class="select_email">
-    <h1 id="selected_email">Email sélectionné</h1>
-    <div id="selected_content"></div>
+
+  <div class="selected_content">
+    <h1 id="selected_email">E-mail</h1>
+      <div id="selected_content"></div>
   </div>
-</div>
 </div>
 
 
